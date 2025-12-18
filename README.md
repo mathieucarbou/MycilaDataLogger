@@ -83,13 +83,13 @@ On first boot the device creates an access point to configure WiFi or stay in AP
 
 Then it will keep your preferences and connect to your WiFi network automatically on next boots (or stay in AP mode as chosen).
 
-Dashboard: `http://<device-ip>/`
+- **Serial Console**: `http://<device-ip>/`
 
-- **If you need to do a factory reset**, go to `http://<device-ip>/reset`
+- **Factory reset**: `http://<device-ip>/reset`
 
-- **If you need to restart**, go to `http://<device-ip>/restart`
+- **Restart**: `http://<device-ip>/restart`
 
-- **If you need to update the firmware over-the-air (OTA)**, go to `http://<device-ip>/update`
+- **Firmware update (OTA)**: `http://<device-ip>/update`
 
 ## License
 
