@@ -70,6 +70,8 @@ esptool.py write_flash 0x0 MycilaDataLogger-BOARD.FACTORY.bin
 - Connect 5V input pint to the remote ESP32 5V or VIN pin
 - Connect RX/TX as per table above
 
+[![](https://mathieu.carbou.me/MycilaDataLogger/schema.jpeg)](https://app.cirkitdesigner.com/project/6c610b27-b877-42f8-ba96-a26dd2e3c492?view=interactive_preview)
+
 **Notes**:
 
 - For now, you can only read the remote ESP32 TX0 logs, not send data to it.
