@@ -15,11 +15,7 @@ Table of contents
 - 📥 [Downloads](#downloads)
 - ⚙️ [Installation](#installation)
 - 🔌 [Wiring](#wiring)
-- 🧰 [Building](#how-to-build-your-own-version)
 - 👀 [Usage](#usage)
-- 📡 [REST API](#rest-api)
-- 🪄 [Shelly EM & 3EM emulation](#shelly-em-and-3em-emulation)
-- 🧩 [For developers](#for-developers)
 
 ## Downloads
 
@@ -74,6 +70,11 @@ esptool.py write_flash 0x0 MycilaDataLogger-BOARD.FACTORY.bin
 - Connect 5V input pint to the remote ESP32 5V or VIN pin
 - Connect RX/TX as per table above
 
+**Notes**:
+
+- For now, you can only read the remote ESP32 TX0 logs, not send data to it.
+  So the TX pin connection (going to RX0 on remote ESP32) is optional.
+
 ## Usage
 
 On first boot the device creates an access point to configure WiFi or stay in AP mode.
@@ -82,9 +83,11 @@ Then it will keep your preferences and connect to your WiFi network automaticall
 
 Dashboard: `http://<device-ip>/`
 
-If you need to do a factory reset, go to `http://<device-ip>/reset`
+- **If you need to do a factory reset**, go to `http://<device-ip>/reset`
 
-If you need to restart, go to `http://<device-ip>/restart`
+- **If you need to restart**, go to `http://<device-ip>/restart`
+
+- **If you need to update the firmware over-the-air (OTA)**, go to `http://<device-ip>/update`
 
 ## License
 
