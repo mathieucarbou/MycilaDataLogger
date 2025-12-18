@@ -91,6 +91,13 @@ Then it will keep your preferences and connect to your WiFi network automaticall
 
 - **Firmware update (OTA)**: `http://<device-ip>/update`
 
+You can also directly stream the ESP32 logs to a terminal by using `websocat`:
+
+```bash
+websocat ws://<device-ip>/webserialws
+
+[![](https://mathieu.carbou.me/MycilaDataLogger/websocat.png)](https://mathieu.carbou.me/MycilaDataLogger/websocat.png)
+
 ## License
 
 This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
