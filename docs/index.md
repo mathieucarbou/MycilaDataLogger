@@ -83,6 +83,13 @@ On first boot the device creates an access point to configure WiFi or stay in AP
 
 Then it will keep your preferences and connect to your WiFi network automatically on next boots (or stay in AP mode as chosen).
 
+The project includes mDNS support so you should be able to access it at `http://DataLogger.local/` in WiFi or ETH mode.
+
+On macOS, teh Discovery app can help you find mDNS devices on your network:
+![](https://mathieu.carbou.me/MycilaDataLogger/mdns.png)
+
+### Links
+
 - **Serial Console**: `http://<device-ip>/`
 
 - **Factory reset**: `http://<device-ip>/reset`
@@ -91,10 +98,13 @@ Then it will keep your preferences and connect to your WiFi network automaticall
 
 - **Firmware update (OTA)**: `http://<device-ip>/update`
 
+### Terminal Streaming
+
 You can also directly stream the ESP32 logs to a terminal by using `websocat`:
 
 ```bash
 websocat ws://<device-ip>/webserialws
+```
 
 [![](https://mathieu.carbou.me/MycilaDataLogger/websocat.png)](https://mathieu.carbou.me/MycilaDataLogger/websocat.png)
 
