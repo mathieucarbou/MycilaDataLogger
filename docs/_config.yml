@@ -1,0 +1,7 @@
+# bundle exec jekyll serve --host=0.0.0.0
+
+title: MycilaDataLogger
+description: ESP32 firmware to connect an ESP32 to an existing ESP32 to view the Serial logs including crashes and stack traces remotely through a web interface
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
