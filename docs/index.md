@@ -85,7 +85,7 @@ Then it will keep your preferences and connect to your WiFi network automaticall
 
 The project includes mDNS support so you should be able to access it at `http://DataLogger.local/` in WiFi or ETH mode.
 
-On macOS, teh Discovery app can help you find mDNS devices on your network:
+On macOS, the Discovery app can help you find mDNS devices on your network:
 ![](https://mathieu.carbou.me/MycilaDataLogger/mdns.png)
 
 ### Links
